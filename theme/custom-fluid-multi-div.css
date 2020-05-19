@@ -1,0 +1,211 @@
+/* Styles that are common between all "optional" containers, can be changed in one place */
+div#header-custom-2,
+div#header-custom-3,
+div#customer-info-header,
+div#customer-info-footer,
+div#billing-info-header,
+div#billing-info-footer,
+div#shipping-info-header,
+div#shipping-info-footer,
+div#order-summary-header,
+div#order-summary-footer,
+div#recommended-for-you-header,
+div#recommended-for-you-footer,
+div#pay-now-header,
+div#pay-now-footer,
+div#security-logos-header,
+div#security-logos-footer,
+div#custom-footer,
+div#custom-footer-2,
+div#custom-footer-3,
+div#custom-footer-4,
+div#custom-footer-5,
+div#footer-image {
+    display: block;
+    height: 40vh;
+    width: 100%;
+    margin: 5px 0 5px 0;
+
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+ div#header-custom-3{
+        display: none;
+    }
+/* 
+   Since the application is responsive by design, the styling changes at various breakpoints (browser widths).  The
+   following @media queries update the css in each container for the device requesting the orderform.  This improves
+   performance by only having a device request the image sizes it needs, and allows for font sizes to vary according
+   to the screen size.
+*/
+@media screen and (min-width: 1200px) {
+    /* Initial text size for the custom content in the header */
+   
+    div#header-custom-2,
+    div#header-custom-3,
+    div#footer-image {
+        background-image: url(img/header.png);
+        height: 40vh;
+    }
+
+    div#custom-footer,
+    div#custom-footer-2,
+    div#custom-footer-3,
+    div#custom-footer-4,
+    div#custom-footer-5 {
+        background-image: url(img/965x40-blue.png);
+    }
+
+    div#customer-info-header,
+    div#customer-info-footer,
+    div#billing-info-header,
+    div#billing-info-footer,
+    div#shipping-info-header,
+    div#shipping-info-footer,
+    div#order-summary-header,
+    div#order-summary-footer,
+    div#recommended-for-you-header,
+    div#recommended-for-you-footer,
+    div#pay-now-header,
+    div#pay-now-footer,
+    div#security-logos-header,
+    div#security-logos-footer {
+        background-image: url(img/450x40-blue.png);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    div#header-custom-2,
+    div#header-custom-3,
+    div#footer-image {
+        background-image: url(img/header.png);
+        height: 36vh;
+    }
+
+    div#custom-footer,
+    div#custom-footer-2,
+    div#custom-footer-3,
+    div#custom-footer-4,
+    div#custom-footer-5 {
+        background-image: url(img/910x40-green.png);
+    }
+
+    div#customer-info-header,
+    div#customer-info-footer,
+    div#billing-info-header,
+    div#billing-info-footer,
+    div#shipping-info-header,
+    div#shipping-info-footer,
+    div#order-summary-header,
+    div#order-summary-footer,
+    div#recommended-for-you-header,
+    div#recommended-for-you-footer,
+    div#pay-now-header,
+    div#pay-now-footer,
+    div#security-logos-header,
+    div#security-logos-footer {
+        background-image: url(img/425x40-green.png);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    div#header-custom-2,
+    div#header-custom-3,
+    div#footer-image {
+        background-image: url(img/header.png);
+        height: 18.5vh;
+    }
+
+    div#custom-footer,
+    div#custom-footer-2,
+    div#custom-footer-3,
+    div#custom-footer-4,
+    div#custom-footer-5 {
+        background-image: url(img/690x40-orange.png);
+    }
+
+    div#customer-info-header,
+    div#customer-info-footer,
+    div#billing-info-header,
+    div#billing-info-footer,
+    div#shipping-info-header,
+    div#shipping-info-footer,
+    div#order-summary-header,
+    div#order-summary-footer,
+    div#recommended-for-you-header,
+    div#recommended-for-you-footer,
+    div#pay-now-header,
+    div#pay-now-footer,
+    div#security-logos-header,
+    div#security-logos-footer {
+        background-image: url(img/315x40-orange.png);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div#header-custom-2,
+    div#header-custom-3,
+    div#footer-image {
+        background-image: url(img/header.png);
+        height: 13vh;
+    }
+
+    div#custom-footer,
+    div#custom-footer-2,
+    div#custom-footer-3,
+    div#custom-footer-4,
+    div#custom-footer-5 {
+        background-image: url(img/705x40-gray.png);
+    }
+
+    div#customer-info-header,
+    div#customer-info-footer,
+    div#billing-info-header,
+    div#billing-info-footer,
+    div#shipping-info-header,
+    div#shipping-info-footer,
+    div#order-summary-header,
+    div#order-summary-footer,
+    div#recommended-for-you-header,
+    div#recommended-for-you-footer,
+    div#pay-now-header,
+    div#pay-now-footer,
+    div#security-logos-header,
+    div#security-logos-footer {
+        background-image: url(img/675x40-gray.png);
+    }
+}
+
+.digital-only {
+    margin-left: 0 !important;
+}
+input[type="checkbox"]:before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0 .25em 0 0;
+
+    font: 16px/1em sans-serif;
+
+    content: "";
+    vertical-align: top;
+}
+input[type="checkbox"]:checked :before {
+    content: "";
+    text-align: center;
+
+    color: #333;
+    background: blue;
+}
+input[type="checkbox"]:checked :after {
+    font-weight: bold;
+}
+
+/* gdpr */
+#gdpr-wrapper {
+    background-color: #F7F7F7;
+}
